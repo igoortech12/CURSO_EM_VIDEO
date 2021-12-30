@@ -1,0 +1,85 @@
+@charset "UTF-8";
+header#cabecalho h1 {
+
+				font-family: 'FonteLogo', sans-serif;
+				font-size: 40pt;
+				color: rgb(185, 70, 70);
+				text-shadow: 20px 1px 1px rgba(0,0,0,0.6);
+				padding-top: 10px;
+				padding-left: 200px;
+				margin-bottom: 0px;
+		}	
+
+		header#cabecalho h2 {
+
+				font-family: 'Titillium Web', sans-serif;
+				font-size: 15pt;
+				text-shadow: 2px 1px 1px rgba(0,0,0,0.8);
+				color: rgb(185, 70, 70);
+				padding-left: 200px; 
+				margin-top: 0px;	
+		}	
+
+header#cabecalho h3 {
+
+				font-family: 'FonteLogo', sans-serif;
+				font-size: 20pt;
+				color: rgb(185, 70, 70);
+				text-shadow: 10px 1px 1px rgba(0,0,0,0.9);
+				padding-top: -5px;
+				padding-left: 600px;
+				margin-bottom: 0px;	
+		}	
+
+nav#menu {
+
+			display: block; /*FAZER MENU FLUTUAR NA TELA*/
+		}
+
+
+		nav#menu ul{
+
+			list-style: none; /*REMOVE MARCAÇÃO DOS ITENS*/
+			text-transform: uppercase; /*TORNA TUDO LETRA MAIUSCULA*/
+			position: absolute; /*FAZER MENU FLUTUAR NA TELA*/
+			top: 20px; /*FAZER MENU FLUTUAR NA TELA*/
+			left: 750px; /*FAZER MENU FLUTUAR NA TELA*/
+
+		}
+
+		nav#menu li {
+
+			display: inline-block; /*COLOCANDO ITENS DO MENU EM LINHA*/
+			background-color: #b94646; /*COR DE FUNDO DAS PALVRAS DO MENU*/
+			padding: 5px; /*AUMENTA O TAMANHO DO FUNDO DAS PALAVRAS DO MENU*/
+			margin-right: 10px; /*AUMENTA A MARGEM FORA DA BORDA DE FUNDO DAS PALAVRAS DO MENU*/
+			margin-top: 18px;
+			transition: background-color 1s;
+			border-radius: 10px;
+			font-size: 12pt;
+			font-weight: bold;
+		}
+
+		nav#menu li:hover { /*FAZER ITENS DO MENU ANIMAR QUANDO PASSADO O MOUSE*/
+
+			background-color: #606060; 
+		}
+
+		nav#menu h1 {
+
+			display: none; /*DESAPARECE COM A PALAVRA*/
+
+		}
+
+		nav#menu a{ /*MEXER COM OS LINKS DO MENU*/
+
+			color: #000000; /*COR DA LETRA: PRETO*/
+			text-decoration: none; /*REMOVER SUBLINHADO*/
+
+		}
+
+		nav#menu a:hover { /*ANIMAR LINKS DOS MENUS*/
+
+			color: #ffffff; /*MUDA A COR DA LETRA DURANTE A ANIMAÇÃO*/
+
+		}

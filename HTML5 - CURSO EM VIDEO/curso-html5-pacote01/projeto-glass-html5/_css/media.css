@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+header#cabecalho-media h1 {
+
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 17pt;
+	color: #606060;
+	background-color: #ffffff;
+	margin: 0px;
+			
+}
+
+header#cabecalho-media h2 {
+
+	font-size: 8pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin-top: 0px;
+		
+}
+
+header#cabecalho-media h3 {
+
+	font-size: 12pt;
+	color: #cecece;
+
+}
+
+header#cabecalho-media h4 {
+
+	font-size: 6pt;
+	color: #606060;
+	background-color: #ffffff;
+	text-align: right;
+						
+}
+
+body div#tv-radio {
+ width: 900px;
+ height: 580px;
+ margin: auto;
+ background: url("../_imagens/radio-tv.png") no-repeat;
+
+}
+
+audio#musica {
+	display: block;
+	position: relative;
+	left: 575px;
+	top: 490px;
+	width: 300px;
+}
+
+iframe#filme {
+	display: block;
+	position: relative;
+	left: 80px;
+	top: 20px;
+	width: 450px;
+	
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="_css/specs.css">
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
+    <title>Fala com a gente</title>
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<script>
+    function calc_total() {
+        var qtd = parseInt(document.getElementById('cQuantidade').value);
+        tot = qtd * 1500;
+        document.getElementById('cTotal').value = tot;
+    }
+</script>
+<body>
+    <div id="interface"> <!--Aqui começo o corpo da página.-->
+        <header id="cabecalho"> <!--Aqui vou trabalhar com todo o conjunto do cabeçalho.-->
+            <hgroup> <!--Aqui vou trabalhar com o texto principal do cabeçalho.-->
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="_imagens/contato.png"/>
+            <nav id="menu"> <!--Aqui vou trabalhar com os botões do menu-->
+                <ul> <!--Aqui vou trabalhar com os botões do menu dentro de uma tabela não ordenados.--> 
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('_imagens/icone-contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article id="noticia-specs"> <!--Aqui vou trabalhar com conteúdo principal-->
+            <header id="cabecalho-specs"> <!--Aqui vou trabalhar com grupo de texto que compõe detalhes de localização da página/autor/data/etc.-->
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contato</h1>
+                <h2>por Gustavo Guanabara</h2>
+                <h4><i>Atualizado em 01/Maio/2013</i></h4>
+            </header>
+            <form method="post" id="fContato" action="mailto:contato@cursoemvideo.com" oninput="calc_total();"> <!--Aqui vou criar um formulário.-->
+                <fieldset title="Identificação do Usuário" id="usuario"> <!--Aqui vou criar os campos.-->
+                    <legend>Identificação do Usuário </legend> <!--Aqui vou criar a legenda do campo.-->        
+                            <p><label for="cNome">Nome: <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p> <!--Aqui vou criar e formatar uma caixa de texto que o visitante irá digitar.-->
+                            <p><label for="cSenha">Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Dígitos"></p>
+                                <hr> <!--Crai uma linha de separação-->
+                            <p><label for="cMail">E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="seunome@domínio..."></p>
+                                <fieldset id="sexo"> <!--Aqui criei um subcampo.-->
+                                <legend>Sexo</legend> 
+                                    <input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label><br/> <!--Type: radio cria "bolinhas" para selecionar-->
+                                    <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+                                </fieldset>
+                            <p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc"></p>
+                </fieldset>
+                <fieldset title="Identificação do Usuário" id="endereco">
+                    <legend>Endereço do Usuário</legend>
+                            <p>Logradouro:<input type="text" name="tEndereco" id="cEndereco" size="20" maxlength="40" placeholder="Rua, Av., Travessa, ...."></p> <!--INPUT vai receber os dados.-->
+                            <p><label for="cNumero">Número:<input type="number" name="tNumero" id="cNumero" size="5" maxlength="11"></p> <!--SIZE define o tamanho da caixa. Quantos caracteres irão aparecer na caixa.-->
+                            <p><label for="cEstado">Estado:
+                                <select name="tEstado" id="cEstado"> <!--Aqui vou criar campos de seleção-->
+                                    <optgroup label="Região Sudeste"> <!--OPTGROUP cria um grupo de opções.-->
+                                        <option value="RJ">Rio de Janeiro</option> <!--OPTION vai tonar uma opção o nome atribuído.-->
+                                        <option value="SP" selected="">São Paulo</option> <!--VALUE vai enviar para o BD a opção "" selecionada. SELECTED vai deixar a opção já na tela-->
+                                        <option value="MG">Minas Gerais</option>
+                                    </optgroup>
+                                    <optgroup label="Região Sul">
+                                        <option value="PR">Paraná</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                    </optgroup>
+                                </select></p> <!---->
+                            <p><label for="cCidade">Cidade:<input type="text" name="tCidade" id="cCidade" size="40" maxlength="40" placeholder="Sua Cidade" list="cidades"></p> <!--MAXLENGTH define o máximo de caracteres que o campo pode receber.-->
+                                <datalist id="cidades"> <!--Aqui vou criar uma lista predefinida-->
+                                    <option value="Rio de Janeiro"></option>
+                                    <option value="Nova Iguaçu"></option>
+                                    <option value="Niterói"></option>
+                                    <option value="Belford Roxo"></option>
+                                </datalist>
+                </fieldset>
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend>
+                           <p><label for="cUrgencia">Grau de Urgência:Min<input type="range" name="tUrgencia" id="cUrgencia" min="0" max="10" step="2">Máx</p>
+                            <p>Mensagem:<br><textarea name="tMensagem" id="cMensagem" cols="45" rows="5"
+                                placeholder="Deixe sua mensagem."></textarea></p>
+                </fieldset>
+                <fieldset id="pedido">
+                    <legend>Quero um Google Glass</legend>
+                    <p><input type="checkbox" name="tPedido" id="cPedido"><label for="cPedido">Gostaria de adquirir um Google Glass quando disponível</p>
+                    <p>Cor:<input type="color" name="tCor" id="cCor"></p>
+                    <p>Quantidade:<input type="number" name="tQuantidade" id="cQuantidade" min="1" max="5"></p>
+                    <p>Preço Total: R$<input type="text" name="tTotal" id="cTotal" readonly placeholder="Total a pagar."></p>
+                </fieldset>
+            <!--<input type="submit" value="Enviar">-->
+            <input type="image" name="tBotao" id="botao" src="_imagens/botao-enviar.png"/>
+            </form>
+        </article>
+        <footer id="rodape">
+            <p>Copyright &copy; 2013 - by Gustavo Guanabara </br>
+                <a href="https://pt-br.facebook.com/" target="_blank">Facebook</a>|<a href="https://twitter.com/" target="_blank">Twitter</a></p>      
+        </footer>
+    </div>    
+</body>
+</html>
+
+<!---->
+<!--
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+
+Google Glass
+A revolução do Google está chegando
+
+[AQUI ENTRA UMA FOTO]
+
+Menu Principal
+- Home
+- Especificações
+- Fotos
+- Multimídia
+- Fale conosco
+
+Fale Conosco > Contato
+Formulário de Contato
+por Gustavo Guanabara
+Atualizado em 01/Maio/2013
+
+Identificação do Usuário
+    Nome:
+    Senha:
+    E-mail:
+    Sexo:
+        - Masculino
+        - Feminino
+    Data de Nascimento:
+
+Endereço do Usuário
+    Logradouro:
+    Número:
+    Estado:
+    Cidade:
+
+Mensagem do Usuário
+    Grau de Urgência:
+    Mensagem:
+
+Quero um Google Glass
+    Gostaria de adquirir um Google Glass quando disponível
+    Cor:
+    Quantidade:
+    Preço Total: R$
+
+
+[BOTÃO ENVIAR]
+
+Copyright 2013 - by Gustavo Guanabara
+Facebook | Twitter
+
+-->

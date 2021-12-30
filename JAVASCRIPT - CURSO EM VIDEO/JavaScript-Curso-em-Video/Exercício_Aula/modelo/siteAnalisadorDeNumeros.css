@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(98, 98, 214);
+}
+
+header {
+    color: aliceblue;
+    text-align: center;
+    font-size: 15pt;
+    font-family: Arial;
+}
+
+section {
+    background-color: aliceblue;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+    border-radius: 10px;
+}
+
+select#cad {
+    width: 150px;
+}
+
+footer {
+    text-align: center;
+    color: aliceblue;
+}

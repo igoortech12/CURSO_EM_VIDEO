@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+article#texto h1 {
+	text-align: center;
+	text-align: justify;
+	text-indent: 50px;
+	font-size: 18pt;
+	margin-top: 250px;
+}
+
+article#texto p {
+	text-align: center;
+	text-align: justify;
+	text-indent: 50px;
+	font-size: 18pt;
+
+}
+
+article#telas {
+	margin-top: 400px;
+}
+
+article#telas p {
+	margin-top: 2px;
+	font-size: 15pt;
+	text-align: center;
+}
+
+article#docs {
+	margin-top: 200px;
+	text-align: center;
+}
+
+iframe#video {
+	margin-left: 400px;
+
+}
+
+ul#historia {
+	width: 800px; /*LARGURA*/
+	height: 1500px;
+	margin: 0px;
+	padding-left: 50px; /*PREENCHIMENTO - MARGEM INTERNA*/
+	padding-right: 480px;
+	padding-top: 50px;
+	overflow: hidden; /*ALARGAR: ESCONDIDA*/
+	list-style: none; /*ESTILO DE LISTA: NENHUMA MARCAÇÃO*/
+
+	/*border: 1px solid black;*/
+}
+
+ul#historia li {
+	width: 850px; /*LARGURA*/
+	height: 300px; /*ALTURA*/
+	margin-bottom: 50px; /*MARGEM EXTERNA - MARGEM ENTRE AS BORDAS (CÉLULAS)*/
+	margin-top: 30px;
+	margin-left: 190px;
+	border-radius: 10px;
+
+	border: 5px solid white; /*ESTILO DA LINHA DA BORDA DA CÉLULA*/
+	background-color: #ffffff; /*PREENCHE A COR DO FUNDA DA CÉLULA*/
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4); /*SOMBRA DA BORDA DA CÉLULA*/
+
+	-webkit-transition: all 0.5s ease-in;
+} 
+
+ul#historia li:hover {
+	-webkit-transform: scale(1.5);
+}
+
+ul#historia li span {
+	opacity: 0; /*ESCONDER A LEGENDA*/
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,0.1);
+	font-size: 9pt;
+	padding: 5px;
+}
+
+ul#historia li:hover span {
+	opacity: 1;
+}
+
+ul#historia li#foto01 {
+	background: url('../_pictures/imagem1.jpg') no-repeat;
+	background-position: 50% 50%; /*POSICIONAR A IMAGEM NO CENTRO*/
+	background-size: 1060px 263px; /*TAMANHO A IMAGEM ORIGINAL*/
+	background-color: #ffffff;
+}
+
+ul#historia li#foto01:hover {
+	background-position: 0px 0px;
+	background-size: 850px 300px;
+}
+
+ul#historia li#foto02 {
+	background: url('../_pictures/imagem2.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 1060px 263px; /*TAMANHO A IMAGEM ORIGINAL*/
+	background-color: #ffffff;
+}
+
+ul#historia li#foto02:hover {
+	background-position: 0px 0px;
+	background-size: 850px 300px;
+}
+
+ul#historia li#foto03 {
+	background: url('../_pictures/imagem3.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 1060px 263px; /*TAMANHO A IMAGEM ORIGINAL*/
+	background-color: #ffffff;
+}
+
+ul#historia li#foto03:hover {
+	background-position: 0px 0px;
+	background-size: 850px 300px;
+}
+
+ul#historia li#foto04 {
+	background: url('../_pictures/imagem4.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 1060px 263px; /*TAMANHO A IMAGEM ORIGINAL*/
+	background-color: #ffffff;
+}
+
+ul#historia li#foto04:hover {
+	background-position: 0px 0px;
+	background-size: 850px 300px;
+}
+

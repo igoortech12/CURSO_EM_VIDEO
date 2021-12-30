@@ -1,0 +1,10 @@
+var i = 5
+var f = 10
+var p = 2
+var res = i + p
+
+while (res <= f) {
+    console.log(`Passo ${i}`)
+    
+    
+}

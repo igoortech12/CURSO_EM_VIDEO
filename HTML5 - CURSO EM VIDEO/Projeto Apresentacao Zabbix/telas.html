@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link rel="stylesheet" href="_css/index.css">
+	<link rel="stylesheet" href="_css/apresentacao.css">
+	<link rel="stylesheet" href="_css/botoes-menu.css">
+	<meta charset="utf-8">
+	<script language="javascript" src="_javascript/funcoes.js"></script>
+	<title>Telas - Zabbix</title>
+</head>
+<body>
+<div id="interface">
+		<header id="cabecalho">
+			<hgroup>
+				<h1> Zabbix </h1>
+					<h2> Sistema de monitoramento de ativo de TI</h2>
+					<h3>TELAS</h3>
+			</hgroup> 
+			<img id="icone" src="_pictures/telas.png"/> 
+			<nav id="menu"> 
+				<ul>
+					<li onmouseover="mudaFoto('_pictures/logo-jangadeiro.png')" onmouseout="mudaFoto('_pictures/telas.png')"><a href="index.html"> Home </a></li> 
+					<li onmouseover="mudaFoto('_pictures/apresentacao.png')" onmouseout="mudaFoto('_pictures/telas.png')" ><a href="apresentacao.html"> Apresentação </a></li>
+					<li onmouseover="mudaFoto('_pictures/telas.png')" onmouseout="mudaFoto('_pictures/telas.png')"><a href="telas.html"> Telas </a></li>
+					<li onmouseover="mudaFoto('_pictures/documentacao.png')" onmouseout="mudaFoto('_pictures/telas.png')"><a href="docs.html"> Documentação </a></li>
+					<li onmouseover="mudaFoto('_pictures/zabbix.png')" onmouseout="mudaFoto('_pictures/telas.png')"><a href="http://10.90.3.239/zabbix/"> Zabbix </a></li>
+				</ul>
+			</nav>
+		</header>
+		<article id="telas">
+			<img src="_pictures/dashboard.jpg" title="DASHBOARD">
+			<p><b>DASHBOARD</b></p>
+			<img src="_pictures/incidentes.jpg" title="INCIDENTES">
+			<p><b>INCIDENTES</b></p>
+			<img src="_pictures/hosts.jpg" title="HOSTS">
+			<p><b>HOSTS</b></p>
+			<img src="_pictures/dados-recentes.jpg" title="DADOS RECENTES">
+			<p><b>DADOS RECENTES</b></p>
+			<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/7inJAmqyc0g" title="Zabbix Basic Concepts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p><b>VÍDEO</b></p>
+		</article>
+<footer id="rodape"> <!-- FORMATA TEXTO PARA RODAPÉ -->
+		<p>Copyright &copy; 2021 - by Igor Oliveira <br> TI Jangadeiro</p>
+		<a href="https://jangadeiro.com.br/" title="Acessar Jangadeiro"><img id="logo-jangadeiro" src="_pictures/logo-jangadeiro.png"/>
+	</footer>
+</div>
+</body>
+</html>

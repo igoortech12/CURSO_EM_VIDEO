@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>
+		var quebrada = false;
+		function mudaLampada(tipo) {
+				if (!quebrada) {
+				document.getElementById("luz").src = "_imagens/" + tipo + ".jpg"; 
+			/*
+			document: Documento que será trabalho.
+			getElementById: Comando para acionar uma nova imagem logo após receber o sinal do id="luz
+			*/
+				if (tipo == 'lampada-quebrada') {
+					quebrada = true;
+				}
+			}
+		}
+	</script>
+	<title>Teste JavaScript</title>
+</head>
+<body>
+	<h1>Acenda a lâmpada</h1>
+	<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
+</body>
+</html>
+
+<!-- 
+ ----------ONCLICK------------
+ Chama o que está dentro dos "" quando o objeto em questão recebe um clique.
+
+ ----------ONMOUSEMOVE------------
+ Chama o que está dentro dos "" quando o mouse passa sobre o objeto.
+
+
+
+
+
+
+ -->

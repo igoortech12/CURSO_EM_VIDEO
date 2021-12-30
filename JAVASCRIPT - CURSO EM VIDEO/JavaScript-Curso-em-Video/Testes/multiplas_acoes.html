@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplas Ações</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>
+        Teste de Multiplas Ações com JavaScript.
+    </h1>
+    <button onclick="clique1()">
+        Botão nº1
+    </button>
+    <button onclick="clique2()">
+        Botão nº2
+    </button>
+    <button onclick="clique3()">
+        Botão nº3
+    </button>
+    <button onclick="clique4()">
+        Botão nº4
+    </button>
+    <section id="acao">
+        <p>Aqui vou registrar suas ações com botões acima.</p>
+    </section>
+    <script>
+        function clique1() {
+            //window.alert('Botão 1 foi acionado!')
+            let resp = window.document.getElementById('acao')
+            resp.innerHTML += '<p>Clicou no primeiro botão</p>'
+        }
+        function clique2() {
+            //window.alert('Botão 2 foi acionado!')
+            let resp = window.document.getElementById('acao')
+            resp.innerHTML += '<p>Clicou no segundo botão</p>'
+        }
+        function clique3() {
+            //window.alert('Botão 3 foi acionado!')
+            let resp = window.document.getElementById('acao')
+            resp.innerHTML += '<p>Clicou no terceiro botão</p>'
+        }
+        function clique4() {
+            //window.alert('Botão 4 foi acionado!')
+            let resp = window.document.getElementById('acao')
+            resp.innerHTML += '<p>Clicou no quarto botão</p>'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+		header#cabecalho-specs h1 {
+
+			font-family: 'FonteLogo', sans-serif;
+			font-size: 17pt;
+			color: #606060;
+			background-color: #ffffff;
+			margin: 0px;
+			
+		}
+
+		header#cabecalho-specs h2 {
+
+			font-size: 8pt;
+			color: #cecece;
+			background-color: #ffffff;
+			margin-top: 0px;
+			
+		}
+
+		header#cabecalho-specs h3 {
+
+			font-size: 12pt;
+			color: #cecece;
+
+		}
+
+		header#cabecalho-specs h4 {
+
+			font-size: 6pt;
+			color: #606060;
+			background-color: #ffffff;
+			text-align: right;
+						
+		}
+
+		article#noticia-specs p {
+
+			font-size: 10pt;
+			text-indent: 50px;
+
+		}
+
+		nav#menu h2 {
+
+			background-color: #ffffff;
+		}
+
+		/*-----------------TRABALHANDO COM IFRAME-------------------*/
+		iframe#frame-spec {
+			width: 395px;
+			height: 280px;
+			border: none; /*REMOVE A BORDA*/
+			overflow: hidden; 
+		}
+
+		
